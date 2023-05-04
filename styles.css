@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(221, 100%, 96%);
+}
+
+.container {
+  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
+  width: 650px;
+  background-color: #fff;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result {
+  width: 50%;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.result .title {
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 16px;
+}
+
+.result .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsl(256, 72%, 46%, 1),
+    hsl(241, 72%, 46%, 0)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle h1 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.circle p {
+  color: hsl(241, 100%, 89%);
+  font-size: 12px;
+}
+
+.result b {
+  color: #fff;
+  font-size: 22px;
+  margin-top: 16px;
+}
+
+.result .info {
+  color: hsl(241, 100%, 89%);
+  width: 250px;
+}
+
+.summary {
+  width: 50%;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summary .title {
+  color: black;
+  font-weight: 800;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 16px 8px;
+}
+
+.row:nth-child(1) {
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+.row:nth-child(1) .badge b {
+  color: hsla(0, 100%, 67%, 0.8);
+}
+.row:nth-child(2) {
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+.row:nth-child(2) .badge b {
+  color: hsla(39, 100%, 56%, 0.8);
+}
+.row:nth-child(3) {
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+.row:nth-child(3) .badge b {
+  color: hsla(166, 100%, 37%, 0.8);
+}
+.row:nth-child(4) {
+  background-color: hsla(234, 85%, 45%, 0.05);
+}
+.row:nth-child(4) .badge b {
+  color: hsla(234, 85%, 45%, 0.8);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.row p {
+  color: gray;
+}
+
+.row p b {
+  color: hsl(224, 30%, 27%);
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 20px;
+  margin-top: auto;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: hsl(224, 30%, 27%);
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 3s linear;
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    align-items: flex-start;
+    background-color: #fff;
+  }
+  .container {
+    text-shadow: none;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .result {
+    width: 100%;
+    border-radius: 0 0 16px 16px;
+  }
+  .result .info {
+    width: 250px;
+  }
+  .summary {
+    width: 100%;
+    text-align: center;
+  }
+}
+.attribution {
+  font-size: 10px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
